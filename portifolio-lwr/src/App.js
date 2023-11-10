@@ -1,4 +1,4 @@
-import './css/styles.css';
+import "./css/styles.css";
 
 function App() {
   return (
@@ -6,9 +6,15 @@ function App() {
       <section id="person">
         <div class="person-content">
           <div class="person-name">
-            <h1>Olá</h1>
-            <h1>Meu nome é</h1>
-            <h1>Lucas Witt da Rosa</h1>
+            <h1>
+              Olá, <span></span>
+            </h1>
+            <h1>
+              Meu nome é <span></span>
+            </h1>
+            <h1>
+              Lucas Witt da Rosa <span></span>
+            </h1>
           </div>
         </div>
       </section>
