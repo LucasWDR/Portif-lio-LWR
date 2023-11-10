@@ -8,7 +8,7 @@
 
 :root {
   --color-white: #fff;
-  --color-red: #b62215;
+  --color-red: #670f82;
   --color-black: #0c0c0c;
   --color-blue: #073fcc;
   --color-purple: #5f01ac;
@@ -30,7 +30,7 @@ body {
   display: flex;
   align-items: center;
 
-  background-color: blueviolet;
+  background-color: var(--color-black);
 }
 
 .person-content {
@@ -47,9 +47,11 @@ body {
 }
 
 .person-content div h1 {
+  padding: 0px 4px;
   color: transparent;
 
-  padding: 0px 4px;
+  position: relative;
+  width: fit-content;
 
   font-size: 4.5rem;
   line-height: 6rem;
@@ -71,10 +73,27 @@ body {
 }
 
 .person-content div h1 span {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  height: 50px;
-  width: 50px;
+  width: 0px;
+  height: 100%;
+  background: blueviolet;
+  animation: written_tex_box 1s ease;
+  animation-delay: 0.5s;
+}
+
+.person-content div h1:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+
+.person-content div h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+
+.person-content div h1:nth-child(3) span {
+  animation-delay: 2.5s;
 }
 
 @keyframes written_text {
@@ -86,5 +105,16 @@ body {
 @keyframes written_tex_name {
   100% {
     color: var(--color-blue);
+  }
+}
+
+@keyframes written_tex_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
   }
 }
