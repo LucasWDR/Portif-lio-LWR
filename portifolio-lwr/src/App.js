@@ -1,6 +1,7 @@
 import "./css/styles.css";
 import "./images/node.svg";
-import image from './images/node.svg';
+import image_node from './images/nodejs-original.svg';
+import image_typescript from './images/typescript-original.svg';
 
 function App() {
 
@@ -25,7 +26,10 @@ function App() {
             <div class="stacks">
               <ul>
                 <li>
-                  <img src={image} alt="html-icon"/>
+                  <img src={image_node} alt="html-icon" />
+                </li>
+                <li>
+                  <img src={image_typescript} alt="html-icon" />
                 </li>
               </ul>
             </div>
