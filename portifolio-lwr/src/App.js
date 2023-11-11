@@ -1,6 +1,9 @@
 import "./css/styles.css";
+import "./images/node.svg";
+import image from './images/node.svg';
 
 function App() {
+
   return (
     <body>
       <section id="person">
@@ -15,6 +18,17 @@ function App() {
             <h1>
               Lucas Witt da Rosa <span></span>
             </h1>
+          </div>
+
+          <div class="stacks-content">
+            <h3>Techs :</h3>
+            <div class="stacks">
+              <ul>
+                <li>
+                  <img src={image} alt="html-icon"/>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
