@@ -1,10 +1,8 @@
 import "./css/styles.css";
 import "./images/node.svg";
-import image_node from './images/nodejs-original.svg';
-import image_typescript from './images/typescript-original.svg';
+import TechsComponent from "./components/TechsComponent";
 
 function App() {
-
   return (
     <body>
       <section id="person">
@@ -20,20 +18,7 @@ function App() {
               Lucas Witt da Rosa <span></span>
             </h1>
           </div>
-
-          <div class="stacks-content">
-            <h3>Techs :</h3>
-            <div class="stacks">
-              <ul>
-                <li>
-                  <img src={image_node} alt="html-icon" />
-                </li>
-                <li>
-                  <img src={image_typescript} alt="html-icon" />
-                </li>
-              </ul>
-            </div>
-          </div>
+        <TechsComponent/>
         </div>
       </section>
     </body>
