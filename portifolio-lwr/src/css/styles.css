@@ -96,6 +96,57 @@ body {
   animation-delay: 2.5s;
 }
 
+.stacks-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+  /* margin-top: 6rem; */
+}
+
+.stacks-content h3 {
+  color: var(--color-white);
+  font-size: 30px;
+
+  margin-top: 40px;
+  margin-block-end: 40px;
+}
+
+.stacks ul li {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  margin: 10px;
+
+  list-style: none;
+}
+
+/* .stacks img {
+  width: 30px;
+  height: 40px;
+} */
+
+.stacks ul {
+  display: flex;
+
+  align-items: center;
+
+  flex-direction: row;
+}
+.stacks ul li img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.stacks ul li div img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 @keyframes written_text {
   100% {
     color: var(--color-white);
